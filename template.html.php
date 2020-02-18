@@ -1,28 +1,18 @@
 <!DOCTYPE html>
 <!--
 File Name:template.html.php
-Date: 02/16/20
+Date: 02/18/20
 Programmer: Maqsuda Kabir
 -->
 
 <html lang="en">
 
 <head>
-    <img src="images/triathlonlogo.jpg" width="120" height="90" alt="Triathlon Logo" id="logo">
-    <div>
-        <form method="post" action="http://webdevbasics.net/scripts/demo.php">
-            <p>Already a member? Login</p>
-            <p>*required field</p>
-            <label>*Name:</label>
-            <textarea name="myFName2" id="FirstName2" rows="2" cols="20"></textarea>
-            <label>*Password:</label>
-            <textarea name="myPassword2" id="Password2" rows="2" cols="25"></textarea>
-            <input class="mySubmit" type="submit" value="Login">
-        </form>
-    </div>
+    <img src="images/triathlonlogo.jpg" width="125" height="95" alt="Triathlon Logo" id="logo">
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ace in the Hole MultiSport Events</title>
+    <title>Ace in the Hole MultiSport Event</title>
     <nav class="mobile-nav">
         <div class="menu-btn" id="menu-btn">
             <div></div>
@@ -68,13 +58,20 @@ Programmer: Maqsuda Kabir
         }(document, 'script', 'weatherwidget-io-js');
     </script>
 </head>
-
+    
 <header>
-    <h1>Ace in the Hole MultiSport Events</h1>
-</header>
-
+<div class="plate">
+  <p class="script"><span>  </span></p>
+  <p class="shadow text1">Ace In The Hole</p>
+  <p class="shadow text2">MultiSport</p>
+  <p class="shadow text2">Event</p>   
+  <p class="script"><span>  </span>
+</div>
+</header>   
+    
 <img src="images/tripletry.jpg" width="1900" height="450" alt="Triathlon" id="hero image">
-<br>
+ 
+
 
 <body>
     <main>
@@ -93,11 +90,14 @@ Programmer: Maqsuda Kabir
         <h3>Slideshow Gallery</h3>
         <!-- Slideshow container -->
         <ul id="slides">
-            <li class="slide 1"><img src="images/usatriathlon.jpg" width="950" height="250" alt="Triathlon"></li>
-                <li class="slide 2"><img src="images/runners.jpg" width="950" height="250" alt="Triathlon"></li>
-                    <li class="slide 3"><img src="images/marathon.jpg" width="950" height="250" alt="Triathlon"> </li>
-                        <li class="slide 4"><img src="images/tripletry.jpg" width="950" height="250" alt="Triathlon"></li>
-                            <li class="slide 5"><img src="images/triathlon2.jpg" width="950" height="250" alt="Triathlon"> </li> </ul>
+            
+            <li class="slide 1"><img src="images/usatriathlon.jpg" width="600" height="250" alt="Triathlon"></li>
+                <li class="slide 2"><img src="images/runners.jpg" width="600" height="250" alt="Triathlon"></li>
+                    <li class="slide 3"><img src="images/marathon.jpg" width="600" height="250" alt="Triathlon"></li>
+                        <li class="slide 4"><img src="images/tripletry.jpg" width="600" height="250" alt="Triathlon"></li>
+                            <li class="slide 5"><img src="images/triathlon2.jpg" width="600" height="250" alt="Triathlon"></li> 
+                           
+        </ul>
         <button class="controls" id="pause">Pause</button>
         <button class="controls" id="previous">Previous</button>
         <button class="controls" id="next">Next</button>
