@@ -1,6 +1,6 @@
 /*
 File Name: reset.css
-Date: 02/25/19
+Date: 03/07/19
 Programmer: Maqsuda Kabir
 */
 
@@ -22,10 +22,10 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 5px;
-    padding: 1em;
-    border: 4em;
-    font-size: 200%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
     font: inherit;
     vertical-align: baseline;
 }
