@@ -1,12 +1,14 @@
 /*
 File Name: navigation.css
-Date: 03/14/19
+Date: 02/24/19
 Programmer: Maqsuda Kabir
 */
 
 
 /* Set up menu */
 
+
+/* remove bullet in front of list items in menu */
 
 .header ul {
     list-style-type: none;
@@ -15,11 +17,8 @@ Programmer: Maqsuda Kabir
     overflow: hidden;
 }
 
-.menu {
-    display: inline-block;
-    font-size: 1.4em;
-}
 
+/* space between lines */
 
 .header li {
     padding: 10px 0;
@@ -113,17 +112,33 @@ Programmer: Maqsuda Kabir
     top: 0;
 }
 
-/* DESKTOP CSS Code and up */
 
-@media only screen and (min-width:1025px) {
-
-    .header .menu-icon {
+/*  MOBILE: CREATE VERTICAL NAVIGATION BAR AT 320 PX OR HIGHER */
+@media (min-width: 320px){
+    /* Note: We float the entire menu to the right, so it is right-aligned. Then we float each list item to the left,
+so it sits to next to the next item. We have to clear the float in the next section so the text won't wrap 
+around the menu. You may find it helpful to change 'left' to 'right' to see what happens. */
+    .header .menu {
+        float: left;
+        margin: 0 0 10px 0;
+        max-height: none;
+    }
+    .header ul {
+        overflow: visible;
+        margin-bottom: 20px;
+    }
+    .header li {
+        float: left;
+    }
+    .header li a {
+        padding: 10px 10px;
+    }
+    #intro {
+        clear: left;
+    }
+    /* hide the checkbox and label for it */
+    .header .menu-icon,
+    .menu-btn {
         display: none;
     }
-
-    .header .menu {
-        max-height: 240px;
-    }
 }
-
-
